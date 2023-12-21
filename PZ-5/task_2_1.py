@@ -1,6 +1,4 @@
 def count_digits(x):
-    if type(x)  != int:
-        raise ValueError(f'Число {x} не целое или не является числом. Проверьте вводимые типы данных')
     sum_digits = 0
     while x > 0:
       sum_digits += x%10
@@ -19,9 +17,6 @@ if n == b1:
 if n == c1:
   print("наибольшая сумма: ",n, " у числа " ,c)
 
-#print(max_sum_digits(1,2,'koshka')) #Число koshka не целое или не является числом. Проверьте вводимые типы данных
 
-
-print(max_sum_digits(123,245,999))
 
 print(max_sum_digits(000000,1000,2))
