@@ -20,4 +20,4 @@ def dict_sum(d: dict):
     return sum1, sum2
     
 print(dict_sum(d1)) # (3, 7)
-print(dict_sum(d2)) # (50, 150)
+print(dict_sum(d2)) # (60, 150)
