@@ -10,16 +10,16 @@
 import random
 
 with open('some.txt', 'w') as file:
-    for _ in range(10):
+    for i in range(30):
         file.write(str(random.randint(-100,100)) + ' ')
-        
-        
+ 
 with open('some.txt', 'r') as file:
     s = list(map(int, file.read().split()))
-    print(f'Исходные данные: {s}')
-    print(f'Количество элементов: {len(s)}')
-    print(f'Минимальный элемент: {min(s)}')
-    print(f'Минимальный элемент: {[max(s)* i for i in s]}')
+    with open('result.txt', 'w', encoding='utf-8') as file2:
+        file2.write(f'Исходные данные: {s}\n')
+        file2.write(f'Количество элементов: {len(s)}\n')
+        file2.write(f'Минимальный элемент: {min(s)}\n')
+        file2.write(f'Элементы уменоженные на максимальный: {[max(s)* i for i in s]}')
     
 
 # Исходные данные: [67, 40, -1, -13, -18, 5, -51, 70, 73, 68]
